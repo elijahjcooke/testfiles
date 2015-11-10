@@ -27,7 +27,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
   </teiHeader>
   <text>
     <body>
-      <div n="urn:cts:perslit:abusaeed.divan.PDL" type="edition" xml:lang="per">
+      <div n="urn:cts:perslit:abusaeed.divan.pdl" type="edition" xml:lang="per">
         <div n="Ab" subtype="genre" type="textpart">
           <div n="1" subtype="poemnumber" type="textpart">
             <l n="1">
