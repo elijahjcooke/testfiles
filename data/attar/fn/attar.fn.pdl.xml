@@ -25,8 +25,6 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
   </teiHeader>
   <text>
     <body>
-      <div n="urn:cts:perslit:attar.fn.pdl" type="PDL(beta)" xmllang="per"/>
-      <head/>
       <div n="urn:cts:perslit:attar.fn.pdl" type="edition" xml:lang="per">
         <l n="1">
           <seg n="a">الا! ای هوشمند خوب کردار</seg>
