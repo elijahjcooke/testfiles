@@ -18,10 +18,10 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern matchPattern="([\w\d]+).([\w\d]+).([\w\d]+).([\w\d]+)" n="hemistich" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=&quot;$1&quot;]/tei:div[@n=&quot;$2&quot;]/tei:l[@n=&quot;$3&quot;]/tei:seg[@n=&quot;$4&quot;])"/>
-        <cRefPattern matchPattern="([\w\d]+).([\w\d]+).([\w\d]+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=&quot;$1&quot;]/tei:div[@n=&quot;$2&quot;]/tei:l[@n=&quot;$3&quot;])"/>
-        <cRefPattern matchPattern="([\w\d]+).([\w\d]+)" n="page" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=&quot;$1&quot;]/tei:div[@n=&quot;$2&quot;])"/>
-        <cRefPattern matchPattern="([\w\d]+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@n=&quot;$1&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+).([\w\d]+).([\w\d]+).([\w\d]+)" n="hemistich" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n=&quot;$1&quot;]/tei:div[@n=&quot;$2&quot;]/tei:l[@n=&quot;$3&quot;]/tei:seg[@n=&quot;$4&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+).([\w\d]+).([\w\d]+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n=&quot;$1&quot;]/tei:div[@n=&quot;$2&quot;]/tei:l[@n=&quot;$3&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+).([\w\d]+)" n="page" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n=&quot;$1&quot;]/tei:div[@n=&quot;$2&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n=&quot;$1&quot;])"/>
       </refsDecl>
     </encodingDesc>
   </teiHeader>
