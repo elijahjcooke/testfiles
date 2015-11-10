@@ -13,13 +13,15 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
         <publisher>Persian Digtal Libary (Beta)</publisher>
       </publicationStmt>
       <sourceDesc>
-        <p>Persian Digital Libary (PDL) texts were sourced(with permission) from the html files of the Ganjoor corpus(2015), and were cleaned, edited, and revised by the Roshan Institute Persian Digital Humanities team at the University of Maryland College Park<bibl><pubPlace>Ganjoor corpus</pubPlace><ptr unit="http://ganjoor.net"/><biblScope unit="part"><ptr target="http://ganjoor.net/"/></biblScope></bibl></p>
+        <p>Persian Digital Libary (PDL) texts were sourced(with permission) from the html files of the Ganjoor corpus(2015), and were cleaned, edited, and revised by the Roshan Institute Persian Digital Humanities team at the University of Maryland College Park<bibl><pubPlace>Ganjoor corpus</pubPlace><ptr unit="http://ganjoor.net"/></bibl></p>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern matchPattern="([\w\d]+).([\w\d]+)" n="hemistich" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n=&quot;$1&quot;]/tei:seg[@n=&quot;$2&quot;]"/>
-        <cRefPattern matchPattern="([\w\d]+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n=&quot;$1&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+).([\w\d]+).([\w\d]+).([\w\d]+)" n="hemistich" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:genre[@n=&quot;$1&quot;]/tei:poemnumber[@n=&quot;$2&quot;]/tei:l[@n=&quot;$3&quot;]/tei:seg[@n=&quot;$4&quot;]"/>
+        <cRefPattern matchPattern="([\w\d]+).([\w\d]+).([\w\d]+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:genre[@n=&quot;$1&quot;]/tei:poemnumber[@n=&quot;$2&quot;]/tei:l[@n=&quot;$3&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+).([\w\d]+)" n="poemnumber" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:genre[@n=&quot;$1&quot;]/tei:poemnumber[@n=&quot;$2&quot;])"/>
+        <cRefPattern matchPattern="([\w\d]+)" n="genre" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:genre[@n=&quot;$1&quot;])"/>
       </refsDecl>
     </encodingDesc>
   </teiHeader>
